@@ -1,4 +1,4 @@
-# Overview
+# Project Overview
 This file details related background information, fully describes the problem, current solutions, and the plan for solving it with a web application. This file also Addresses the relevance of the problem, and the scope of the project.
 (*NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx *)
 1. Background Information & Problem Relevance
