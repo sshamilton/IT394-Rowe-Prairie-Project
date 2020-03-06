@@ -5,5 +5,6 @@
 * CDT Chase Prairie '20, Co. C1
 * CDT Anton Rowe '21, Co. E4
 
-### Problem Statement & Project Information
+### Problem Statement
 * [Problem Statement](problem.md)
+  * Includes Project Overview & Problem Information
