@@ -2,7 +2,14 @@
 This file details related background information, fully describes the problem, current solutions, and the plan for solving it with a web application. This file also Addresses the relevance of the problem, and the scope of the project.
 (*NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx *)
 1. Background Information & Problem Relevance
-2. 
+2. The Problem
+3. Current Solutions
+4. Proposed Solution - iRoom Inspector Web Application
+5. Application Structure Plan
+6. The Scope of the Project
+7. Stakeholder (Potential User) Analysis
+8. Contacts
+9. Works Cited
 
 ## Background Information & Problem Relevance
 Every day of the week, cadets at the Untied States Military Academy are tasked with inspecting the rooms of their peers and 
@@ -75,8 +82,12 @@ check various gigs from a checklist), that the app would be much easier to use a
 for regular use across the corps.
 
 ## Contacts
-CDT Prairie, Chase G. '20, Co. C1 - Chase.Prairie@WestPoint.edu - 253-279-1771
-CDT Rowe, Anton '21, Co. E4 - Anton.Rowe@WestPoint.edu - 404-453-3333
+* CDT Prairie, Chase G. '20, Co. C1
+  * Email: Chase.Prairie@WestPoint.edu
+  * Cell: 253-279-1771
+* CDT Rowe, Anton '21, Co. E4
+  * Email: Anton.Rowe@WestPoint.edu
+  * Cell: 404-453-3333
 
 ## Works Cited
 * CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
