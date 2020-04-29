@@ -61,7 +61,9 @@ Furthermore, Every "X" mark constitutes a gig, so if a cadet submits a report wi
 will automatically record the room as having failed inspection (or passed if less than 3 "X"'s are checked.
 
 ## Model Diagram
-![This image depicts our project's model diagram](Images/Model%20Diagram.png)
+<div align="center">
+    <img src="Images/Model%20Diagram.png" width="550" />
+</div>
 
 ## The Scope of the Project
 The primary function of this project is to develop a web application that will allow cadets to efficiently record
