@@ -71,7 +71,7 @@ room passes and failures, as well as number of gigs and gig details.  Potential 
 are the ability for users to see data, such as how many rooms across their company/battalion/regiment/the corps have been 
 checked off for AMI/SAMI that day, how many rooms are in PMI, room inspection pass rates by company/battalion/regiment/the corps,
 and what the most common gigs are (for example, unclean floors, clothes left out, or unclean sinks).  
-We hope that this would incentivize companies to check AMI more frequently if they are able to see their inspection percentages 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We hope that this would incentivize companies to check AMI more frequently if they are able to see their inspection percentages 
 compared to other companies.  Altogether, we hope this app could help standardize room inspection rates and standards across the 
 corps, as well as make military grades (which are often significantly influenced by room cleanliness) more objective, rather than 
 subjective.  If possible, we will try to code an app for publication on the IOS and/or android app store so that this app will 
