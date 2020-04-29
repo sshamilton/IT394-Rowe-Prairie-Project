@@ -60,6 +60,9 @@ selected one of the wrong criterion previously, or if they ran out of time to fi
 Furthermore, Every "X" mark constitutes a gig, so if a cadet submits a report with 3 or more "X"'s checked, the system
 will automatically record the room as having failed inspection (or passed if less than 3 "X"'s are checked.
 
+## Model Diagram
+![This image depicts our project's model diagram](Images/Model%20Diagram.png)
+
 ## The Scope of the Project
 The primary function of this project is to develop a web application that will allow cadets to efficiently record
 room passes and failures, as well as number of gigs and gig details.  Potential additions that we hope to include in this app
