@@ -10,4 +10,4 @@
   * Includes Project Overview & Problem Information
 
 ### Model Diagram
-![This is image alternate text.  The Model Diagram picture is supposed to show here](Images/Model%20Diagram)
+![](Images/Model%20Diagram)
