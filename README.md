@@ -10,4 +10,4 @@
   * Includes Project Overview & Problem Information
 
 ### Model Diagram
-![](Images/Model%20Diagram)
+![](Images/Model%20Diagram.png)
