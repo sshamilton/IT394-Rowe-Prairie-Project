@@ -66,12 +66,12 @@ will automatically record the room as having failed inspection (or passed if les
 </div>
 
 ## The Scope of the Project
-The primary function of this project is to develop a web application that will allow cadets to efficiently record
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The primary function of this project is to develop a web application that will allow cadets to efficiently record
 room passes and failures, as well as number of gigs and gig details.  Potential additions that we hope to include in this app
 are the ability for users to see data, such as how many rooms across their company/battalion/regiment/the corps have been 
 checked off for AMI/SAMI that day, how many rooms are in PMI, room inspection pass rates by company/battalion/regiment/the corps,
 and what the most common gigs are (for example, unclean floors, clothes left out, or unclean sinks).  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We hope that this would incentivize companies to check AMI more frequently if they are able to see their inspection percentages 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We hope that this would incentivize companies to check AMI more frequently if they are able to see their inspection percentages 
 compared to other companies.  Altogether, we hope this app could help standardize room inspection rates and standards across the 
 corps, as well as make military grades (which are often significantly influenced by room cleanliness) more objective, rather than 
 subjective.  If possible, we will try to code an app for publication on the IOS and/or android app store so that this app will 
