@@ -10,4 +10,6 @@
   * Includes Project Overview & Problem Information
 
 ### Model Diagram
-![This image depicts our project's model diagram](Images/Model%20Diagram.png)
+<div align="center">
+ <img src="Images/Model%20Diagram.png" width="550">
+ </div>
