@@ -8,3 +8,6 @@
 ### Problem Statement
 * [Problem Statement](problem.md)
   * Includes Project Overview & Problem Information
+
+### Model Diagram
+![This image depicts our project's model diagram](Images/Model%20Diagram.png)
