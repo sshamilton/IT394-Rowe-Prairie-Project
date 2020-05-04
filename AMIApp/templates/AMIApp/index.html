@@ -1,0 +1,9 @@
+{% if latest_inspections_list %}
+    <ul>
+    {% for inspection in latest_inspections_list %}
+        <li><a href="/AMIApp/{{ inspection.id }}/">{{ inspection.room }}  {{ inspection.Date }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No inspections are available.</p>
+{% endif %}
