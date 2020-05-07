@@ -1,0 +1,26 @@
+<h1>Enter Inspection</h1>
+<form action="{% url 'enterInspection' %}" method="post">
+
+<b>Select the room that was inspected:</b><br>
+{% for room in rooms_list %}
+<input type="radio" name="room" id="choice{{ forloop.counter }}" value="{{ Rooms.id }}" required>
+    <label for="choice{{ forloop.counter }}">{{ room.Barracks_Name }} {{room.Room_Number}}</label><br>
+{% endfor %}<br>
+
+<b>Select all inspection gigs:</b><br>
+{% for gig in gigs_list %}
+<input type="checkbox" name="gig" id="choice{{ forloop.counter }}" value="{{ gigs.id }}">
+    <label for="choice{{ forloop.counter }}">{{ gig.Gig_Name }}</label><br>
+{% endfor %}
+
+<br>
+<b>Check if room passed inspection:</b><br>Pass:
+<input type="checkbox" name="pass" id="pass" value="Pass"><br>
+
+<br>
+<b>Comments:</b><br>
+<input type="text" id="comments" name="comments"><br>
+<br>
+
+<input type="submit" value="Submit Inspection">
+</form>
