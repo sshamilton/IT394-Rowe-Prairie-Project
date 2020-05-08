@@ -8,7 +8,7 @@ urlpatterns = [
     # Detail
     path('<int:inspections_id>/', views.detail, name='detail'),
     # Enter Inspection
-    path('enterInspection/', views.enterInspection, name='enterInspection'),
+    path('enterInspection/', views.get_inspection, name='enterInspection'),
     # Enter Inspection 2
     path('enterInspection2/', views.get_inspection,name='enterInspection2'),
     # Room Record

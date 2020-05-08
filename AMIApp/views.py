@@ -30,14 +30,8 @@ def get_inspection(request):
             #return render(request, 'AMIApp/index.html')
     else:
         form = InspectionsForm()
-    return render(request, 'AMIApp/enterInspection2.html', {'form':form})
+    return render(request, 'AMIApp/enterInspection.html', {'form':form})
 
-
-def enterInspection(request):
-    rooms_list = Rooms.objects.order_by('Barracks_Name')
-    gigs_list = Gigs.objects.order_by('Gig_Name')
-    context = {'rooms_list':rooms_list, 'gigs_list': gigs_list}
-    return render(request, 'AMIApp/enterInspection.html', context)
 
 def roomRecord(request, Room_Number):
     room = get_object_or_404(Rooms, pk=Room_Number)
