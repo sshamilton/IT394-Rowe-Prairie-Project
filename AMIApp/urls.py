@@ -13,28 +13,28 @@ urlpatterns = [
     path('enterInspection/', views.get_inspection, name='enterInspection'),
     # All Barracks
     path('allBarracks/', views.allBarracks, name='allBarracks'),
-    # Brad Long Barracks
+    # (1) Brad Long Barracks
     path('Brad_Long/', views.BradLong, name='Brad_Long'),
-    # Brad Short Barracks
-    path('Brad_Short/', views.Davis, name='Davis'),
-    # Davis Barracks
+    # (2) Brad Short Barracks
+    path('Brad_Short/', views.BradShort, name='Brad_Short'),
+    # (3) Davis Barracks
     path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
-    # Davis Barracks
-    path('Davis/', views.Davis, name='Davis'),
+    # (4) Eisenhower Barracks
+    path('Eisenhower/', views.Eisenhower, name='Eisenhower'),
+    # (5) Grant Barracks
+    path('Grant/', views.Grant, name='Grant'),
+    # (6) Lee Barracks
+    path('Lee/', views.Lee, name='Lee'),
+    # (7) Mac Long Barracks
+    path('Mac_Long/', views.MacLong, name='Mac_Long'),
+    # (8) Mac Short Barracks
+    path('Mac_Short/', views.MacShort, name='MacShort'),
+    # (9) Pershing Barracks
+    path('Pershing/', views.Pershing, name='Pershing'),
+    # (10) Scott Barracks
+    path('Scott/', views.Scott, name='Scott'),
     # Room Record
-    path('Davis/<int:rooms_id>/', views.roomRecord, name='roomRecord'),
+    path('Rooms/<int:rooms_id>/', views.roomRecord, name='roomRecord'),
     # Cadet Record (X_Num)
     path('<int:X_Num>/', views.cadetRecord, name='cadetRecord'),
 ]

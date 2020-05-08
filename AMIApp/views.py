@@ -39,11 +39,6 @@ def get_inspection(request):
 def allBarracks(request):
     return render(request, 'AMIApp/allBarracks.html')
 
-def Davis(request):
-    rooms_list = Rooms.objects.filter(Barracks_Name='Davis')
-    context = {'rooms_list': rooms_list}
-    return render(request, 'AMIApp/Davis.html', context)
-
 def roomRecord(request, rooms_id):
     room = Rooms.objects.filter(pk=rooms_id)
     inspections_list = Inspections.objects.filter(room=rooms_id).order_by('-Date')
@@ -61,6 +56,63 @@ def roomRecord(request, rooms_id):
 def cadetRecord(request, X_Num):
     return HttpResponse("You're looking at the inspection record for the cadet with X Number: "+X_Num)
 
+# Barracks Views
+def BradLong(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Brad Long')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
 
+def BradShort(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Brad_Short')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
 
+def Davis(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Davis')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
 
+def Eisenhower(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Eisenhower')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Grant(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Grant')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Lee(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Lee')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def MacLong(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Mac Long')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def MacShort(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Mac Short')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Pershing(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Pershing')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Scott(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Scott')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
