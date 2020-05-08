@@ -10,7 +10,7 @@ urlpatterns = [
     # Enter Inspection
     path('enterInspection/', views.enterInspection, name='enterInspection'),
     # Enter Inspection 2
-    path('enterInspection2/', views.EnterInspectionView.get,name='enterInspection2'),
+    path('enterInspection2/', views.get_inspection,name='enterInspection2'),
     # Room Record
     path('<int:rooms_id>/', views.roomRecord, name='roomRecord'),
     # Cadet Record (X_Num)

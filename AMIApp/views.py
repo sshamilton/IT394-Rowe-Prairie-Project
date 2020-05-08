@@ -19,22 +19,20 @@ def detail(request, inspections_id):
     return render(request, 'AMIApp/detail.html', {'inspection': inspection})
 
 # Source: https://www.youtube.com/watch?v=qwE9TFNub84
-class EnterInspectionView(TemplateView):
-    def get(request):
-        form = InspectionsForm()
-        return render(request, 'AMIApp/enterInspection2.html', {'form':form})
-    def post(request):
+# Source: https://stackoverflow.com/questions/45256493/post-request-done-successfully-but-data-not-saved-in-database
+def get_inspection(request):
+    if request.method == 'POST':
         form = InspectionsForm(request.POST)
         if form.is_valid():
-            room = form.cleaned_data['room']
-            Date = form.cleaned_data['Date']
-            gigs = form.cleaned_data['gigs']
-            Pass = form.cleaned_data['Pass']
-            Comments = form.cleaned_data['Comments']
-            return render(request, 'AMIApp/')
-        args = {'form':form, 'room':room, 'Date':Date, 'gigs':gigs, 'Pass':Pass, 'Comments':Comments}
-        return render(request, 'AMIApp/enterInspections.html', args)
-    
+            form.save(commit=False)
+            form.save(commit=True)
+            return redirect('/AMIApp/')
+            #return render(request, 'AMIApp/index.html')
+    else:
+        form = InspectionsForm()
+    return render(request, 'AMIApp/enterInspection2.html', {'form':form})
+
+
 def enterInspection(request):
     rooms_list = Rooms.objects.order_by('Barracks_Name')
     gigs_list = Gigs.objects.order_by('Gig_Name')
