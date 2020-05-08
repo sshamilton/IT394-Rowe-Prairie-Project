@@ -100,3 +100,9 @@ for regular use across the corps.
 
 * CDT Jenkins, Bernard ’20 Co. C1. (2020, February 28). Personal interview.
 
+* “Django Tutorial - How to Add Bootstrap.” *YouTube.com*, Tech with Tim, 22 Apr. 2019, www.youtube.com/watch?v=0mCZdemSsbs.
+*NOTE: Followed this tutorial to learn how to use bootstrap with Django
+
+* Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, getbootstrap.com/docs/4.0/getting-started/introduction/.
+*NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link
+
