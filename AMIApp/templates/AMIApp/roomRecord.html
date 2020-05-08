@@ -1,1 +1,31 @@
-<h1>{{ Rooms.Room_Number }}</h1>
+{% if room %}
+<a href="/AMIApp/allBarracks/">Back to Inspection Records</a><br>
+
+{% for room in room %}
+<center><h1>{{ room.Barracks_Name }} {{ room.Room_Number }}  Inspection Record</h1></center>{% endfor %}
+
+<b><u>Inspection Pass Rate:</u> {{ passRate }}%</b><br>
+<br>
+
+<b>Past Inspections</b>
+{% if inspections_list %}
+    <ol type="1">
+    {% for inspection in inspections_list %}
+        {% if inspection.Pass == True %}
+        <li><p><b>PASS</b>  {{ inspection.Date }} <b><u>Gigs:</b></u>{% for gig in inspection.gigs.all %} <b>({{ forloop.counter }})</b>
+        {{ gig.Gig_Name }}{% endfor %}
+        <b><u>Comments:</b></u> {{ inspection.Comments }}</p></li>
+        {% else %}
+        <li><p><b>FAIL</b>  {{ inspection.Date }} <b><u>Gigs:</b></u>{% for gig in inspection.gigs.all %} <b>({{ forloop.counter }})</b>
+        {{ gig.Gig_Name }}{% endfor %}
+        <b><u>Comments:</b></u> {{ inspection.Comments }}</p></li>
+    {% endif %}
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>No inspections are available.</p>
+{% endif %}
+
+{% else %}
+    <p>This room does not exist.</p>
+{% endif %}

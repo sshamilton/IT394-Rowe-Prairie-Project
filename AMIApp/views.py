@@ -8,10 +8,14 @@ from .models import Position, Cadet_Has_Superior, Rooms, Cadets, Inspections, Gi
 from .forms import InspectionsForm
 
 # Create your views here.
-def index(request):
+def home(request):
+    rooms_list = Rooms.objects.order_by('Barracks_Name')
+    context = {'rooms_list': rooms_list}
+    return render(request, 'AMIApp/home.html', context)
+
+def allInspections(request):
     latest_inspections_list = Inspections.objects.order_by('-Date')
     context = {'latest_inspections_list': latest_inspections_list}
-    template = loader.get_template('AMIApp/index.html')
     return render(request, 'AMIApp/index.html', context)
 
 def detail(request, inspections_id):
@@ -32,10 +36,27 @@ def get_inspection(request):
         form = InspectionsForm()
     return render(request, 'AMIApp/enterInspection.html', {'form':form})
 
+def allBarracks(request):
+    return render(request, 'AMIApp/allBarracks.html')
 
-def roomRecord(request, Room_Number):
-    room = get_object_or_404(Rooms, pk=Room_Number)
-    return HttpResponse("You're looking at the inspection record for room: "+str(Room_Number)+" of "+Barracks_Name+" Barracks.")
+def Davis(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Davis')
+    context = {'rooms_list': rooms_list}
+    return render(request, 'AMIApp/Davis.html', context)
+
+def roomRecord(request, rooms_id):
+    room = Rooms.objects.filter(pk=rooms_id)
+    inspections_list = Inspections.objects.filter(room=rooms_id).order_by('-Date')
+    passRate = '100'
+    if (len(inspections_list) > 0):
+        passCount = 0
+        numInspections = len(inspections_list)
+        for inspection in inspections_list:
+            if (inspection.Pass == True):
+                passCount = passCount + 1
+        passRate = str(round(((passCount / numInspections)*100),2))
+    context = {'inspections_list': inspections_list, 'room':room, 'passRate':passRate}
+    return render(request, 'AMIApp/roomRecord.html', context)
 
 def cadetRecord(request, X_Num):
     return HttpResponse("You're looking at the inspection record for the cadet with X Number: "+X_Num)
