@@ -96,13 +96,13 @@ for regular use across the corps.
 
 ## Works Cited
 * CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
-*NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx
+    * *NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx*
 
 * CDT Jenkins, Bernard ’20 Co. C1. (2020, February 28). Personal interview.
 
 * “Django Tutorial - How to Add Bootstrap.” *YouTube.com*, Tech with Tim, 22 Apr. 2019, www.youtube.com/watch?v=0mCZdemSsbs.
-*NOTE: Followed this tutorial to learn how to use bootstrap with Django
+    * *NOTE: Followed this tutorial to learn how to use bootstrap with Django*
 
 * Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, getbootstrap.com/docs/4.0/getting-started/introduction/.
-*NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link
+    * *NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link*
 
