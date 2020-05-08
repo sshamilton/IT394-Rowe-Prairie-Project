@@ -8,10 +8,14 @@ from .models import Position, Cadet_Has_Superior, Rooms, Cadets, Inspections, Gi
 from .forms import InspectionsForm
 
 # Create your views here.
-def index(request):
+def home(request):
+    rooms_list = Rooms.objects.order_by('Barracks_Name')
+    context = {'rooms_list': rooms_list}
+    return render(request, 'AMIApp/home.html', context)
+
+def allInspections(request):
     latest_inspections_list = Inspections.objects.order_by('-Date')
     context = {'latest_inspections_list': latest_inspections_list}
-    template = loader.get_template('AMIApp/index.html')
     return render(request, 'AMIApp/index.html', context)
 
 def detail(request, inspections_id):
@@ -30,22 +34,85 @@ def get_inspection(request):
             #return render(request, 'AMIApp/index.html')
     else:
         form = InspectionsForm()
-    return render(request, 'AMIApp/enterInspection2.html', {'form':form})
+    return render(request, 'AMIApp/enterInspection.html', {'form':form})
 
+def allBarracks(request):
+    return render(request, 'AMIApp/allBarracks.html')
 
-def enterInspection(request):
-    rooms_list = Rooms.objects.order_by('Barracks_Name')
-    gigs_list = Gigs.objects.order_by('Gig_Name')
-    context = {'rooms_list':rooms_list, 'gigs_list': gigs_list}
-    return render(request, 'AMIApp/enterInspection.html', context)
-
-def roomRecord(request, Room_Number):
-    room = get_object_or_404(Rooms, pk=Room_Number)
-    return HttpResponse("You're looking at the inspection record for room: "+str(Room_Number)+" of "+Barracks_Name+" Barracks.")
+def roomRecord(request, rooms_id):
+    room = Rooms.objects.filter(pk=rooms_id)
+    inspections_list = Inspections.objects.filter(room=rooms_id).order_by('-Date')
+    passRate = '100'
+    if (len(inspections_list) > 0):
+        passCount = 0
+        numInspections = len(inspections_list)
+        for inspection in inspections_list:
+            if (inspection.Pass == True):
+                passCount = passCount + 1
+        passRate = str(round(((passCount / numInspections)*100),2))
+    context = {'inspections_list': inspections_list, 'room':room, 'passRate':passRate}
+    return render(request, 'AMIApp/roomRecord.html', context)
 
 def cadetRecord(request, X_Num):
     return HttpResponse("You're looking at the inspection record for the cadet with X Number: "+X_Num)
 
+# Barracks Views
+def BradLong(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Brad Long')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
 
+def BradShort(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Brad_Short')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
 
+def Davis(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Davis')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
 
+def Eisenhower(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Eisenhower')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Grant(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Grant')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Lee(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Lee')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def MacLong(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Mac Long')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def MacShort(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Mac Short')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Pershing(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Pershing')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
+
+def Scott(request):
+    rooms_list = Rooms.objects.filter(Barracks_Name='Scott')
+    first_room_list = rooms_list[:1]
+    context = {'rooms_list': rooms_list, 'first_room_list':first_room_list}
+    return render(request, 'AMIApp/Barracks.html', context)
