@@ -1,0 +1,13 @@
+<a href="/AMIApp/">Return to Home Page</a>
+<br>
+<center><h1>Subordinate Performance Records</h1></center><br>
+
+<form method="POST">
+    {% csrf_token %}
+    <b>Enter your X Number to view Subordinate Performance Records:</b><br>
+    {{ form }}<br>
+    <input type="submit" value="Submit"><br>
+    <br>
+    <b><u>Note:</u></b> Do not enter "x" before the number<br>
+    <u>Example:</u> For "x00123", enter "00123"
+</form>

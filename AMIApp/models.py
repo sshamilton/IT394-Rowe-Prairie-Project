@@ -7,13 +7,6 @@ class Position(models.Model):
         return self.Position_Title
 
 
-class Cadet_Has_Superior(models.Model):
-    CDT_X_Num = models.CharField(max_length=6)
-    CDT_Sup_X_Num = models.CharField(max_length=6)
-    def __str__(self):
-        return "The Cadet with X Number: "+self.CDT_X_Num+" has Superior with X Number: "+self.CDT_Sup_X_Num+"."
-
-
 class Rooms(models.Model):
     Barracks_Name = models.CharField(max_length=100)
     Room_Number = models.PositiveSmallIntegerField()
@@ -26,6 +19,7 @@ class Cadets(models.Model):
     X_Num = models.CharField(max_length=5)
     position = models.ForeignKey(Position,on_delete=models.DO_NOTHING)
     room = models.ForeignKey(Rooms,blank=True,null=True,on_delete=models.DO_NOTHING)
+    superior = models.ForeignKey('self',blank=True,null=True,on_delete=models.DO_NOTHING)
     def __str__(self):
         return "CDT "+self.Name+", x"+self.X_Num
 
