@@ -4,8 +4,8 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse
 from django.views.generic import TemplateView
 
-from .models import Position, Cadet_Has_Superior, Rooms, Cadets, Inspections, Gigs
-from .forms import InspectionsForm
+from .models import Position, Rooms, Cadets, Inspections, Gigs
+from .forms import InspectionsForm, SubForm
 
 # Create your views here.
 def home(request):
@@ -14,7 +14,7 @@ def home(request):
     return render(request, 'AMIApp/home.html', context)
 
 def allInspections(request):
-    latest_inspections_list = Inspections.objects.order_by('-Date')
+    latest_inspections_list = Inspections.objects.order_by('-Date')[:100]
     context = {'latest_inspections_list': latest_inspections_list}
     return render(request, 'AMIApp/index.html', context)
 
@@ -53,8 +53,39 @@ def roomRecord(request, rooms_id):
     context = {'inspections_list': inspections_list, 'room':room, 'passRate':passRate}
     return render(request, 'AMIApp/roomRecord.html', context)
 
-def cadetRecord(request, X_Num):
-    return HttpResponse("You're looking at the inspection record for the cadet with X Number: "+X_Num)
+def get_subordinates(request):
+    if request.method == 'POST':
+        form = SubForm(request.POST)
+        if form.is_valid():
+            supX = form.cleaned_data['X_Num']
+            sup = Cadets.objects.get(X_Num = supX)
+            sub_list = Cadets.objects.filter(superior=sup)
+            performance_list = []
+            for sub in sub_list:
+                p_sub_list = []
+                passRate = '100'
+                inspectionCount = '0'
+                lastInspection = 'Never'
+                if (len(sub_list) > 0):
+                    inspections_list = Inspections.objects.filter(room=sub.room).order_by('-Date')
+                    if (len(inspections_list) > 0):
+                        lastInspection = str(inspections_list[0].Date)
+                        passCount = 0
+                        numInspections = len(inspections_list)
+                        for inspection in inspections_list:
+                            if (inspection.Pass == True):
+                                passCount = passCount + 1
+                        passRate = str(round(((passCount/numInspections)*100),2))
+                    p_sub_list.append(sub.Name)
+                    p_sub_list.append(passRate)
+                    p_sub_list.append(str(len(inspections_list)))
+                    p_sub_list.append(lastInspection)
+                performance_list.append(p_sub_list)
+            context = {'sub_list': sub_list, 'performance_list':performance_list}
+            return render(request, 'AMIApp/subPerformance.html', context)
+    else:
+        form = SubForm()
+    return render(request, 'AMIApp/sub.html', {'form':form})
 
 # Barracks Views
 def BradLong(request):

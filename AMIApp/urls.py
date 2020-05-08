@@ -11,6 +11,8 @@ urlpatterns = [
     path('<int:inspections_id>/', views.detail, name='detail'),
     # Enter Inspection
     path('enterInspection/', views.get_inspection, name='enterInspection'),
+    # Get Subs
+    path('sub/', views.get_subordinates, name='sub'),
     # All Barracks
     path('allBarracks/', views.allBarracks, name='allBarracks'),
     # (1) Brad Long Barracks
@@ -35,6 +37,4 @@ urlpatterns = [
     path('Scott/', views.Scott, name='Scott'),
     # Room Record
     path('Rooms/<int:rooms_id>/', views.roomRecord, name='roomRecord'),
-    # Cadet Record (X_Num)
-    path('<int:X_Num>/', views.cadetRecord, name='cadetRecord'),
 ]

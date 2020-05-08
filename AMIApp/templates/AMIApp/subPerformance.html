@@ -1,0 +1,18 @@
+<a href="/AMIApp/">Return to Home Page</a>
+<center><h1>Subordinate Performance Records</h1></center>
+
+{% if sub_list %}
+    <ul>
+    {% for pList in performance_list %}
+        <li><h2>{{ pList.0 }}</h2>
+          <ul>
+            <li><b><u>Pass Rate:</b></u> {{ pList.1 }}%</li>
+            <li><b><u>Number of Times Inspected:</b></u> {{ pList.2 }}</li>
+            <li><b><u>Last Inspected:</b></u> {{ pList.3 }}</li>
+          </ul>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>There are no subordinate performance records to show.</p>
+{% endif %}
