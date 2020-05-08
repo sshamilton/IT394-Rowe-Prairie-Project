@@ -1,7 +1,7 @@
 <h1>Enter Inspection</h1>
 
-<form method="post">
+<form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <input type="submit" value="Submit">
 </form>
