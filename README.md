@@ -1,5 +1,6 @@
 # IT394-Rowe-Prairie-Project
 ## Link to Deployed Application
+https://gentle-scrubland-63769.herokuapp.com/AMIApp/
 
 ## Admin Info
 ### Project Team - *"No I.T."*
