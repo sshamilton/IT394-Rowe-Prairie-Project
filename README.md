@@ -10,7 +10,7 @@
 ### Problem Statement
 * [Problem Statement](problem.md)
   * Includes Project Overview & Problem Information
-   * Includes Background Information & Problem Relevance, The Problem, Current Solutions, Proposed Solution (AMI App Application), Application Structure Plan, Architecture, The Scope of the Project, Stakeholder (Potential User) Analysis, Contacts, and Works Cited.
+    * Includes Background Information & Problem Relevance, The Problem, Current Solutions, Proposed Solution (AMI App Application), Application Structure Plan, Architecture, The Scope of the Project, Stakeholder (Potential User) Analysis, Contacts, and Works Cited.
 
 ### Model Diagram
 <div align="center">
