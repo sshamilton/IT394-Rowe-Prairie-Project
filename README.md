@@ -63,29 +63,29 @@ While some basic testing has been done, the project team plans to test the app s
     * *NOTE: Utilized the USCC Cadet SOP for development of the various Gigs that were implemeted under admin site access.  Our group could not find the current checklist that is hung on most barracks doors, but we utilized the AMI (A.M. Inspection period) information within the USCC SOP from 2019 in order to develop the list of gigs that we incorporated.  
     * *NOTE: We would have added a link to view the 2019 USCC SOP online, but I do not believe that there are any sites hosting the PDF at this time.  However, this SOP is relatively similar to the 2012 USCC SOP, which can be accessed here:* **[Link to 2012 USCC SOP](https://docplayer.net/25953931-Uscc-sop-september-2012.html "2012 USCC SOP")**
 
-* CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
+3. CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
     * *NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx*
 
-* CDT Jenkins, Bernard ’20 Co. C1. (2020, February 28). Personal interview.
+4. CDT Jenkins, Bernard ’20 Co. C1. (2020, February 28). Personal interview.
 
-* “Django Tutorial - How to Add Bootstrap.” *YouTube.com*, Tech with Tim, 22 Apr. 2019, www.youtube.com/watch?v=0mCZdemSsbs.
+5. “Django Tutorial - How to Add Bootstrap.” *YouTube.com*, Tech with Tim, 22 Apr. 2019, www.youtube.com/watch?v=0mCZdemSsbs.
     * *NOTE: Followed this tutorial to learn how to use bootstrap with Django*
 
-* Goodridge, Max. “Simple Introduction to Django Forms (Django Tutorial) | **Part 45**.” *YouTube.com*, Max Goodridge, 10 Feb. 2017, www.youtube.com/watch?v=b8RpVs7bSgo.
+6. Goodridge, Max. “Simple Introduction to Django Forms (Django Tutorial) | **Part 45**.” *YouTube.com*, Max Goodridge, 10 Feb. 2017, www.youtube.com/watch?v=b8RpVs7bSgo.
 
-* Goodridge, Max. “How to Receive Data From a Django Form Using a POST Request (Django Tutorial) | **Part 46**.” *YouTube.com*, Max Goodridge, 13 Feb. 2017, www.youtube.com/watch?v=wzZiONbtwiA.
+7. Goodridge, Max. “How to Receive Data From a Django Form Using a POST Request (Django Tutorial) | **Part 46**.” *YouTube.com*, Max Goodridge, 13 Feb. 2017, www.youtube.com/watch?v=wzZiONbtwiA.
 
-* Goodridge, Max. “How to Save Data Input through Form Using a Django Model Form (Django Tutorial) | **Part 47**.” *YouTube.com*, Max Goodridge, 17 Feb. 2017, www.youtube.com/watch?v=qwE9TFNub84.
+8. Goodridge, Max. “How to Save Data Input through Form Using a Django Model Form (Django Tutorial) | **Part 47**.” *YouTube.com*, Max Goodridge, 17 Feb. 2017, www.youtube.com/watch?v=qwE9TFNub84.
     * ***NOTE: Followed three consecutive tutorial videos from Max Goodridge on YouTube (Part 45-47), and modified some of the code used for help in using Django forms and properly saving form data from ModelForms to Models.***
 
-* Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, https://getbootstrap.com/docs/4.0/getting-started/introduction/.
+9. Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, https://getbootstrap.com/docs/4.0/getting-started/introduction/.
     * *NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link*
 
-* Rehman, Abdul *(User)*, and Zaidfazil *(User)*. “POST Request Done Successfully but Data Not Saved in Database.” *Stack Overflow*, (Site Users) Abdul Rehman & Zaidfazil, 22 July 2017, https://stackoverflow.com/questions/45256493/post-request-done-successfully-but-data-not-saved-in-database.
+10. Rehman, Abdul *(User)*, and Zaidfazil *(User)*. “POST Request Done Successfully but Data Not Saved in Database.” *Stack Overflow*, (Site Users) Abdul Rehman & Zaidfazil, 22 July 2017, https://stackoverflow.com/questions/45256493/post-request-done-successfully-but-data-not-saved-in-database.
     * *NOTE: Utilized this source to understand how to save data from a form properly using form.save(commit=False) and form.save(commit=True), as well as to help understand how to use and interpret GET and POST requests differently*
 
-* user2449798user2449798, and Simeon VisserSimeon Visser. “Could Not Parse the Remainder: '[0]' from 'Item[0]' Django.” *Stack Overflow*, 1 July 1963, https://stackoverflow.com/questions/19895894/could-not-parse-the-remainder-0-from-item0-django.
+11. user2449798user2449798, and Simeon VisserSimeon Visser. “Could Not Parse the Remainder: '[0]' from 'Item[0]' Django.” *Stack Overflow*, 1 July 1963, https://stackoverflow.com/questions/19895894/could-not-parse-the-remainder-0-from-item0-django.
     * *NOTE: Utilized this source to learn how to reference list items in HTML using list.0 instead of list[0]*
 
-* “Writing your first Django app (Tutorial).” *Django*, https://docs.djangoproject.com/en/3.0/intro/tutorial01/.
+12. “Writing your first Django app (Tutorial).” *Django*, https://docs.djangoproject.com/en/3.0/intro/tutorial01/.
     * *NOTE: Followed this tutorial and utilized the Django web application development framework for a majority of the production of this web application.  Significant amounts of code utilized throughout this project in areas such as models, views, urls, templates, etc. follow this tutorial very closely.*
