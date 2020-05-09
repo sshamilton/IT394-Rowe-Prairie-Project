@@ -1,51 +1,59 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<title>West Point AMI App</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>West Point AMI App</title>
 </head>
 
 <body>
-{% if room %}
-<a href="/AMIApp/allBarracks/">Back to Inspection Records</a><br>
+  {% if room %}
+  <a href="/AMIApp/allBarracks/">Back to Inspection Records</a><br>
 
-{% for room in room %}
-<center><h1>{{ room.Barracks_Name }} {{ room.Room_Number }}  Inspection Record</h1></center>{% endfor %}
+  {% for room in room %}
+  <center>
+    <h1>{{ room.Barracks_Name }} {{ room.Room_Number }} Inspection Record</h1>
+  </center>{% endfor %}
 
-<b><u>Inspection Pass Rate:</u> {{ passRate }}%</b><br>
-<br>
+  <b><u>Inspection Pass Rate:</u> {{ passRate }}%</b><br>
+  <br>
 
-<b>Past Inspections</b>
-{% if inspections_list %}
-    <ol type="1">
+  <b>Past Inspections</b>
+  {% if inspections_list %}
+  <ol type="1">
     {% for inspection in inspections_list %}
-        {% if inspection.Pass == True %}
-        <li><p><b>PASS</b>  {{ inspection.Date }} <b><u>Gigs:</b></u>{% for gig in inspection.gigs.all %} <b>({{ forloop.counter }})</b>
+    {% if inspection.Pass == True %}
+    <li>
+      <p><b>PASS</b> {{ inspection.Date }} <b><u>Gigs:</b></u>{% for gig in inspection.gigs.all %} <b>({{ forloop.counter }})</b>
         {{ gig.Gig_Name }}{% endfor %}
-        <b><u>Comments:</b></u> {{ inspection.Comments }}</p></li>
-        {% else %}
-        <li><p><b>FAIL</b>  {{ inspection.Date }} <b><u>Gigs:</b></u>{% for gig in inspection.gigs.all %} <b>({{ forloop.counter }})</b>
+        <b><u>Comments:</b></u> {{ inspection.Comments }}</p>
+    </li>
+    {% else %}
+    <li>
+      <p><b>FAIL</b> {{ inspection.Date }} <b><u>Gigs:</b></u>{% for gig in inspection.gigs.all %} <b>({{ forloop.counter }})</b>
         {{ gig.Gig_Name }}{% endfor %}
-        <b><u>Comments:</b></u> {{ inspection.Comments }}</p></li>
+        <b><u>Comments:</b></u> {{ inspection.Comments }}</p>
+    </li>
     {% endif %}
     {% endfor %}
-    </ol>
-{% else %}
-    <p>No inspections are available.</p>
-{% endif %}
+  </ol>
+  {% else %}
+  <p>No inspections are available.</p>
+  {% endif %}
 
-{% else %}
-    <p>This room does not exist.</p>
-{% endif %}
+  {% else %}
+  <p>This room does not exist.</p>
+  {% endif %}
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
