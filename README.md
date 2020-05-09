@@ -56,10 +56,10 @@ While some basic testing has been done, the project team plans to test the app s
   * **V.** Identifying the number of times that different cadets have inspected rooms.  A higher number of inspections conducted by a cadet shows a higher level of involvement with subordinates.
 
 ## Works Cited
-* “Atom Beautify.” *Atom*, Atom Text Editor, https://atom.io/packages/atom-beautify.
+1. “Atom Beautify.” *Atom*, Atom Text Editor, https://atom.io/packages/atom-beautify.
     * *NOTE: Utilized Atom's Atom-Beautify package in order to format most or all HTML and python files and ensure that they adhere to PEP8 standards (to the best of my knowledge - not 100% sure that the way I ran Atom beautify formatted text to PEP8 standards, but I believe that it did).*
 
-* BG Buzzard, Curtis A. *USCC Cadet SOP*. United States Military Academy, 2019.
+2. BG Buzzard, Curtis A. *USCC Cadet SOP*. United States Military Academy, 2019.
     * *NOTE: Utilized the USCC Cadet SOP for development of the various Gigs that were implemeted under admin site access.  Our group could not find the current checklist that is hung on most barracks doors, but we utilized the AMI (A.M. Inspection period) information within the USCC SOP from 2019 in order to develop the list of gigs that we incorporated.  
     * *NOTE: We would have added a link to view the 2019 USCC SOP online, but I do not believe that there are any sites hosting the PDF at this time.  However, this SOP is relatively similar to the 2012 USCC SOP, which can be accessed here:* **[Link to 2012 USCC SOP](https://docplayer.net/25953931-Uscc-sop-september-2012.html "2012 USCC SOP")**
 
@@ -80,6 +80,9 @@ While some basic testing has been done, the project team plans to test the app s
 
 * Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, https://getbootstrap.com/docs/4.0/getting-started/introduction/.
     * *NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link*
+
+* Rehman, Abdul *(User)*, and Zaidfazil *(User)*. “POST Request Done Successfully but Data Not Saved in Database.” *Stack Overflow*, (Site Users) Abdul Rehman & Zaidfazil, 22 July 2017, https://stackoverflow.com/questions/45256493/post-request-done-successfully-but-data-not-saved-in-database.
+    * *NOTE: Utilized this source to understand how to save data from a form properly using form.save(commit=False) and form.save(commit=True), as well as to help understand how to use and interpret GET and POST requests differently*
 
 * user2449798user2449798, and Simeon VisserSimeon Visser. “Could Not Parse the Remainder: '[0]' from 'Item[0]' Django.” *Stack Overflow*, 1 July 1963, https://stackoverflow.com/questions/19895894/could-not-parse-the-remainder-0-from-item0-django.
     * *NOTE: Utilized this source to learn how to reference list items in HTML using list.0 instead of list[0]*
