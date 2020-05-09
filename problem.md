@@ -96,7 +96,7 @@ for regular use across the corps.
 
 ## Works Cited
 * “Atom Beautify.” *Atom*, Atom Text Editor, https://atom.io/packages/atom-beautify.
-    * *NOTE: Utilized Atom's Atom-Beautify package in order to format most or all HTML and python files and ensure that they adhere to PEP8 standards.*
+    * *NOTE: Utilized Atom's Atom-Beautify package in order to format most or all HTML and python files and ensure that they adhere to PEP8 standards (to the best of my knowledge - not 100% sure that the way I ran Atom beautify formatted text to PEP8 standards, but I believe that it did).*
 
 * CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
     * *NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx*
