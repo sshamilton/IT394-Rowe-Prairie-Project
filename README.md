@@ -11,7 +11,6 @@
   * Cell: 404-453-3333
 
 ## Project Overview
-This file details various things.
 (*NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx *)
 ### Table of Contents
 1. [Problem Statement](problem.md)
