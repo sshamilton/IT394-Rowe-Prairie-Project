@@ -59,6 +59,10 @@ While some basic testing has been done, the project team plans to test the app s
 * “Atom Beautify.” *Atom*, Atom Text Editor, https://atom.io/packages/atom-beautify.
     * *NOTE: Utilized Atom's Atom-Beautify package in order to format most or all HTML and python files and ensure that they adhere to PEP8 standards (to the best of my knowledge - not 100% sure that the way I ran Atom beautify formatted text to PEP8 standards, but I believe that it did).*
 
+* BG Buzzard, Curtis A. *USCC Cadet SOP*. United States Military Academy, 2019.
+    * *NOTE: Utilized the USCC Cadet SOP for development of the various Gigs that were implemeted under admin site access.  Our group could not find the current checklist that is hung on most barracks doors, but we utilized the AMI (A.M. Inspection period) information within the USCC SOP from 2019 in order to develop the list of gigs that we incorporated.  
+    * *NOTE: We would have added a link to view the 2019 USCC SOP online, but I do not believe that there are any sites hosting the PDF at this time.  However, this SOP is relatively similar to the 2012 USCC SOP, which can be accessed here:* **[Link to 2012 USCC SOP](https://docplayer.net/25953931-Uscc-sop-september-2012.html "2012 USCC SOP")**
+
 * CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
     * *NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx*
 
