@@ -71,8 +71,12 @@ While some basic testing has been done, the project team plans to test the app s
 * “Django Tutorial - How to Add Bootstrap.” *YouTube.com*, Tech with Tim, 22 Apr. 2019, www.youtube.com/watch?v=0mCZdemSsbs.
     * *NOTE: Followed this tutorial to learn how to use bootstrap with Django*
 
+* Goodridge, Max. “Simple Introduction to Django Forms (Django Tutorial) | **Part 45**.” *YouTube.com*, Max Goodridge, 10 Feb. 2017, www.youtube.com/watch?v=b8RpVs7bSgo.
+
+* Goodridge, Max. “How to Receive Data From a Django Form Using a POST Request (Django Tutorial) | **Part 46**.” *YouTube.com*, Max Goodridge, 13 Feb. 2017, www.youtube.com/watch?v=wzZiONbtwiA.
+
 * Goodridge, Max. “How to Save Data Input through Form Using a Django Model Form (Django Tutorial) | **Part 47**.” *YouTube.com*, Max Goodridge, 17 Feb. 2017, www.youtube.com/watch?v=qwE9TFNub84.
-    * ***NOTE: Followed three consecutive tutorial videos from Max Goodridge on YouTube (Part 45-47), and modified some of the code used for help in using Django forms and properly saving form data to models.***
+    * ***NOTE: Followed three consecutive tutorial videos from Max Goodridge on YouTube (Part 45-47), and modified some of the code used for help in using Django forms and properly saving form data from ModelForms to Models.***
 
 * Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, https://getbootstrap.com/docs/4.0/getting-started/introduction/.
     * *NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link*
