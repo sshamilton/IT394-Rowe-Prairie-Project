@@ -51,21 +51,15 @@ Our team plans to develop a room inspection checklist app (web application) for 
 would generate useful data in the process.  The current plan for the app is a checklist app with a checklist of all
 AMI or SAMI standards that a room must meet.  
 
-## Application Structure Plan
-When using the app, cadets will first select a barracks from a dropdown menu, 
-select a floor from a dropdown menu, select a room from a dropdown menu, and select the date from a dropdown menu (with
-the preset value for date being the current date).  Then, as cadets are inspecting rooms, they can simply scroll down a
-checklist of standards, and select a checkmark or "X" mark if a room meets or does not meet a standard.  Cadets will then
-click either "Submit" to submit the report, or "Return" to return to the previous page in the event that they 
-selected one of the wrong criterion previously, or if they ran out of time to finish the inspection.
-Furthermore, Every "X" mark constitutes a gig, so if a cadet submits a report with 3 or more "X"'s checked, the system
-will automatically record the room as having failed inspection (or passed if less than 3 "X"'s are checked.
 
 ## Architecture
 ### Model Diagram
 <div align="center">
     <img src="Images/Model%20Diagram.png" width="550" />
 </div>
+
+## Application Structure Plan
+Cadets utilizing this app have four main use cases.  First, cadets can enter an inspection based on the room inspected, the date, if the room passed or failed, all gigs received, and any comments that they wish to add.  Second, cadets can view inspection records for all rooms on record by pulling up a link to various cadet barracks, and then selecting any of the rooms from that barracks to view that room's inspection record.  Third, cadets can view the performance records of their subordinates by entering their own xNumber, which allows them to then view a list of their subordinates with each subordinates inspection pass rate, the number of times that the subordinate has been inspected so far, and the date of that subordinate's most recent inspection.  Fourth, Cadets can also view a list of recent inspections if they wish to simply explore other inspections that have recently taken place across the corps.
 
 ## The Scope of the Project
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The primary function of this project is to develop a web application that will allow cadets to efficiently record
