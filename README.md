@@ -32,18 +32,16 @@
 </div>
 
 ### Application Structure Plan
-When using the app, cadets will first select a barracks from a dropdown menu, 
-select a floor from a dropdown menu, select a room from a dropdown menu, and select the date from a dropdown menu (with
-the preset value for date being the current date).  Then, as cadets are inspecting rooms, they can simply scroll down a
-checklist of standards, and select a checkmark or "X" mark if a room meets or does not meet a standard.  Cadets will then
-click either "Submit" to submit the report, or "Return" to return to the previous page in the event that they 
-selected one of the wrong criterion previously, or if they ran out of time to finish the inspection.
-Furthermore, Every "X" mark constitutes a gig, so if a cadet submits a report with 3 or more "X"'s checked, the system
-will automatically record the room as having failed inspection (or passed if less than 3 "X"'s are checked.
+Cadets utilizing this app have four main use cases.  First, cadets can enter an inspection based on the room inspected, the date, if the room passed or failed, all gigs received, and any comments that they wish to add.  Second, cadets can view inspection records for all rooms on record by pulling up a link to various cadet barracks, and then selecting any of the rooms from that barracks to view that room's inspection record.  Third, cadets can view the performance records of their subordinates by entering their own xNumber, which allows them to then view a list of their subordinates with each subordinates inspection pass rate, the number of times that the subordinate has been inspected so far, and the date of that subordinate's most recent inspection.  Fourth, Cadets can also view a list of recent inspections if they wish to simply explore other inspections that have recently taken place across the corps.
 
 ## Testing
+### Previously Conducted Testing
+Most app testing was done internally through admin testing, which proved that foreign keys were functioning properly and that basic functionality was working.  Three basic test cases were also develop in order to make app testing easier.  Developed test cases included **(1)** testing that rooms were assigned to cadets properly and could be referenced correctly, **(2)** testing that inspections could be assigned to rooms properly and inspections could be referenced based on the room in question, and **(3)** testing that a cadet's inspections could be viewed based on that cadet's room, and the inspections that occurred on that room.
+### Plan for Future Testing
+While some basic testing has been done, the project team plans to test the app significantly in the future.  Initial future testing plans include testing that subordinate pass rates are registering correctly, as well as testing the app with uncleaned data.  While the basic functionality of the app works when data is input correctly, it still requires significant improvement in regard to internal data cleaning and formatting in order to allow for easier use by users.  The group plans to have other cadets test the app and identify what types of mistakes that users make when entering data.  Anticipated mistakes in entering data include entering xNumbers as "x00123" as opposed to "00123", entering barracks names as "Brad_Long" as opposed to "Brad Long", and not holding down the ctrl button in order to select multiple gigs (which would render the app to only select the last clicked gig as opposed to all clicked gigs).  Testing the functionality of the app when improperly formatted data is input is the main area of testing that the group plans for in the future.  Additionally, as new features are added to the application, such as viewing the average inspection pass rate of an entire barracks across all rooms, then the group will develop new tests in order to ensure the functionality of added features. 
 
 ## Known Issues
+While the basic functionality of the app appears to work, the app has significant room for
 
 ## Recommended Improvements
 
