@@ -103,7 +103,7 @@ for regular use across the corps.
 * “Django Tutorial - How to Add Bootstrap.” *YouTube.com*, Tech with Tim, 22 Apr. 2019, www.youtube.com/watch?v=0mCZdemSsbs.
     * *NOTE: Followed this tutorial to learn how to use bootstrap with Django*
 
-* Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, getbootstrap.com/docs/4.0/getting-started/introduction/.
+* Otto, Mark, and Jacob Thornton. “Introduction.” · *Bootstrap*, https://getbootstrap.com/docs/4.0/getting-started/introduction/.
     * *NOTE: Utilized code from bootstrap to add style and aesthetics to the application.  Some code utilized in html pages was copied and pasted directly from this link*
 
 * user2449798user2449798, and Simeon VisserSimeon Visser. “Could Not Parse the Remainder: '[0]' from 'Item[0]' Django.” *Stack Overflow*, 1 July 1963, https://stackoverflow.com/questions/19895894/could-not-parse-the-remainder-0-from-item0-django.
