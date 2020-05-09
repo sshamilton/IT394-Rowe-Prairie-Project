@@ -30,7 +30,8 @@ This file details various things.
 ### Model Diagram
 <div align="center">
  <img src="Images/Model%20Diagram.png" width="550">
- </div>
+</div>
+
 ### Application Structure Plan
 When using the app, cadets will first select a barracks from a dropdown menu, 
 select a floor from a dropdown menu, select a room from a dropdown menu, and select the date from a dropdown menu (with
