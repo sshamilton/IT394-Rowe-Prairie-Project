@@ -5,7 +5,7 @@ This file details related background information, fully describes the problem, c
 1. Background Information & Problem Relevance
 2. The Problem
 3. Current Solutions
-4. Proposed Solution - iRoom Inspector Web Application
+4. Proposed Solution - AMI App Application
 5. Application Structure Plan
 6. The Scope of the Project
 7. Stakeholder (Potential User) Analysis
@@ -43,7 +43,7 @@ almost altogether after about a few weeks.  CDT Jenkins hypothesized that the co
 had a significant number of rooms as well as dates for the semester, made it difficult to navigate and use, and that this 
 was why cadets stopped using it.  
 
-## Proposed Solution - iRoom Inspector Web Application
+## Proposed Solution - AMI App Application
 Our Distributed Application Development team, consisting of CDT Chase Prairie '20, Co. C1 and CDT Anton Rowe '21, Co. E4
 believes that this problem can be solved with a web application that cadets could use on their phones and laptops.
 Our team plans to develop a room inspection checklist app (web application) for facilitating inspecting AMI/SAMI 
