@@ -41,9 +41,17 @@ Most app testing was done internally through admin testing, which proved that fo
 While some basic testing has been done, the project team plans to test the app significantly in the future.  Initial future testing plans include testing that subordinate pass rates are registering correctly, as well as testing the app with uncleaned data.  While the basic functionality of the app works when data is input correctly, it still requires significant improvement in regard to internal data cleaning and formatting in order to allow for easier use by users.  The group plans to have other cadets test the app and identify what types of mistakes that users make when entering data.  Anticipated mistakes in entering data include entering xNumbers as "x00123" as opposed to "00123", entering barracks names as "Brad_Long" as opposed to "Brad Long", and not holding down the ctrl button in order to select multiple gigs (which would render the app to only select the last clicked gig as opposed to all clicked gigs).  Testing the functionality of the app when improperly formatted data is input is the main area of testing that the group plans for in the future.  Additionally, as new features are added to the application, such as viewing the average inspection pass rate of an entire barracks across all rooms, then the group will develop new tests in order to ensure the functionality of added features. 
 
 ## Known Issues
-While the basic functionality of the app appears to work, the app has significant room for
+While the basic functionality of the app appears to work, the app has significant room for improvement in several areas.  First, entering data incorrectly, such as "x00123" as opposed to "00123" will prevent the app from working properly, and these input errors are not fixed automatically within the app.  Additionally, while the app allows users to enter inspections, it does not currently allow users to delete or modify inspections that they have entered, and this could pose a significant challenge if cadets make mistakes while entering data or accidentally hit *enter* too early.  Fixing these issues will make the app significantly better and user friendly.
 
 ## Recommended Improvements
+* First, the group plans to improve the app's internal handling of improperly formatted inputs, such as "x00123" instead of "00123"
+* Second, the group plans to add the feature to edit or delete old inspections, because users will inevitably make mistakes during either inspecting of rooms or during the entering of inspection data
+* Third, the group plans to implement new features to the app that expand the capabilites of the app, such as those listed below
+  * **I.** Identifying the most common gigs across different barracks, in order to identify differences inspection standards between different companies/regiments.
+  * **II.** Identifying the inspection performance of a cadet's entire chain of command
+  * **III.** Identifying the different performance rates across different positions across the corps.  For example, one would expect that the First Captain, as well as Brigade Staff Cadets, would perform better than Team Leaders or Members of Squad (MOS)'s
+  * **IV.** Adding a feature to show which cadet conducted an inspection, and a link to that cadet's inspection records.  This will help to ensure that cadets are not excessively enforcing standards that they themselves are not adhering to.
+  * **V.** Identifying the number of times that different cadets have inspected rooms.  A higher number of inspections conducted by a cadet shows a higher level of involvement with subordinates.
 
 ## Works Cited
 * “Atom Beautify.” *Atom*, Atom Text Editor, https://atom.io/packages/atom-beautify.
@@ -65,4 +73,3 @@ While the basic functionality of the app appears to work, the app has significan
 
 * “Writing your first Django app (Tutorial).” *Django*, https://docs.djangoproject.com/en/3.0/intro/tutorial01/.
     * *NOTE: Followed this tutorial and utilized the Django web application development framework for a majority of the production of this web application.  Significant amounts of code utilized throughout this project in areas such as models, views, urls, templates, etc. follow this tutorial very closely.*
-
