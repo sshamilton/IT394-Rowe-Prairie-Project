@@ -14,7 +14,7 @@
 This file details various things.
 (*NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx *)
 ### Table of Contents
-1. Problem Statement
+1. [Problem Statement](problem.md)
 2. Architecture
 3. Testing
 4. Known Issues
