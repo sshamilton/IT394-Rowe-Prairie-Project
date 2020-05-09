@@ -61,7 +61,8 @@ selected one of the wrong criterion previously, or if they ran out of time to fi
 Furthermore, Every "X" mark constitutes a gig, so if a cadet submits a report with 3 or more "X"'s checked, the system
 will automatically record the room as having failed inspection (or passed if less than 3 "X"'s are checked.
 
-## Model Diagram
+## Architecture
+### Model Diagram
 <div align="center">
     <img src="Images/Model%20Diagram.png" width="550" />
 </div>
