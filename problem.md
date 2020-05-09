@@ -95,6 +95,9 @@ for regular use across the corps.
   * Cell: 404-453-3333
 
 ## Works Cited
+* “Atom Beautify.” *Atom*, Atom Text Editor, https://atom.io/packages/atom-beautify.
+    * *NOTE: Utilized Atom's Atom-Beautify package in order to format most or all HTML and python files and ensure that they adhere to PEP8 standards.*
+
 * CDT Prairie, Chase G. '20, Co. C1.  "PRAIRIE IT394 Project Proposal.docx"  28 FEB 2020. 
     * *NOTE: Some of the text for this file was taken from CDT Prairie, Chase '20, Co. C1 IT394 Project Proposal.docx*
 
